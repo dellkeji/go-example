@@ -11,5 +11,4 @@ func main() {
 
 	// 布尔
 	fmt.Println(true && false)
-
 }
