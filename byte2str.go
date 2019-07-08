@@ -13,7 +13,7 @@ func byte2str(src []byte) (p string) {
 	for i, c := range src {
 		data[i] = c
 	}
-	hdr := (*reflect.StringHeader)(unsafe.Pointer(&p))
+	hdr := (*reflect.Strimako_templatesngHeader)(unsafe.Pointer(&p))
 	hdr.Data = uintptr(unsafe.Pointer(&data[0]))
 	hdr.Len = len(src)
 
